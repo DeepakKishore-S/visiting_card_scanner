@@ -9,24 +9,23 @@ class DatabaseHelper {
   factory DatabaseHelper() => _instance;
   static Database? _database;
 
-
   DatabaseHelper._internal();
 
   // Getter for the database; initializes it if not already done
   Future<Database> get database async {
     if (_database != null) return _database!;
-    _database = await _initDatabase(); 
+    _database = await _initDatabase();
     return _database!;
   }
 
   // Initializes and opens the database
   Future<Database> _initDatabase() async {
-    Directory documentsDirectory = await getApplicationDocumentsDirectory(); 
-    String path = join(documentsDirectory.path, 'cards.db'); 
+    Directory documentsDirectory = await getApplicationDocumentsDirectory();
+    String path = join(documentsDirectory.path, 'cards.db');
     return await openDatabase(
       path,
       version: 1,
-      onCreate: _onCreate, 
+      onCreate: _onCreate,
     );
   }
 
@@ -38,24 +37,24 @@ class DatabaseHelper {
         details TEXT,
         name TEXT
       )
-    '''); 
+    ''');
   }
 
   // Function to insert a new card into the 'cards' table
   Future<void> insertCard(Map<String, dynamic> card) async {
-    final db = await database; 
-    await db.insert('cards', card); 
+    final db = await database;
+    await db.insert('cards', card);
   }
 
   // Function to delete a card from the 'cards' table by its ID
   Future<void> deleteCard(String id) async {
-    final db = await database; 
-    await db.delete('cards', where: 'id = ?', whereArgs: [id]); 
+    final db = await database;
+    await db.delete('cards', where: 'id = ?', whereArgs: [id]);
   }
 
   // Function to fetch all cards from the 'cards' table
   Future<List<Map<String, dynamic>>> fetchCards() async {
-    final db = await database; 
-    return await db.query('cards'); 
+    final db = await database;
+    return await db.query('cards');
   }
 }

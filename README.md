@@ -38,7 +38,7 @@ To run this project locally, follow these steps:
    - Add the required dependencies for Google ML Kit in the `pubspec.yaml` file:
      ```yaml
      dependencies:
-       google_ml_kit: ^0.6.0 # or latest version
+       google_mlkit_text_recognition: ^0.6.0 # or latest version
      ```
    - Follow the official setup guide for [Google ML Kit](https://developers.google.com/ml-kit) for both Android and iOS.
 
@@ -77,7 +77,7 @@ lib/
 This project uses the following dependencies:
 
 - **flutter**: `^3.x.x`
-- **google_ml_kit**: For text recognition and OCR.
+- **google_mlkit_text_recognition**: For text recognition and OCR.
 - **sqflite**: For managing local database storage.
 - **image_picker**: For capturing images from the camera.
 - **path_provider**: For accessing the app's document directory.
