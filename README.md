@@ -24,7 +24,7 @@ To run this project locally, follow these steps:
 
 1. **Clone the repository:**
    ```bash
-   git clone https://github.com/yourusername/visiting_card_scanner.git
+   git clone https://github.com/DeepakKishore-S/visiting_card_scanner.git
    cd visiting_card_scanner
    ```
 
@@ -72,12 +72,6 @@ lib/
 └── scanning_card.dart    # Allows users to scan and save new visiting cards
 ```
 
-## Screenshots
-
-| Home Screen | Scanning a Card | Saving a Card |
-|-------------|-----------------|---------------|
-| ![Home Screen](screenshots/home.png) | ![Scanning Card](screenshots/scanning.png) | ![Save Card](screenshots/save.png) |
-
 ## Dependencies
 
 This project uses the following dependencies:
@@ -94,14 +88,6 @@ You can install these dependencies by running:
 flutter pub get
 ```
 
-## License
 
-This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for more details.
-
-## Author
-
-- **Deepak Kishore S.**
-  - [GitHub](https://github.com/yourusername)
-  - [LinkedIn](https://www.linkedin.com/in/yourprofile)
 ```
 
