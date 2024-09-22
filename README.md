@@ -1,4 +1,4 @@
-```markdown
+
 # Visiting Card Scanner
 
 A Flutter-based mobile application that allows users to scan and store visiting cards. The app uses Google ML Kit's text recognition technology to extract text from images of visiting cards and stores the information in a local SQLite database.
@@ -46,7 +46,7 @@ To run this project locally, follow these steps:
    Connect your device or start an emulator, and run the app:
    ```bash
    flutter run
-   ```
+   
 
 ## How It Works
 
