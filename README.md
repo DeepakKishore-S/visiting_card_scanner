@@ -86,8 +86,4 @@ You can install these dependencies by running:
 
 ```bash
 flutter pub get
-```
-
-
-```
 
